@@ -12,6 +12,24 @@ Users can toggle between two inputs sources: distance measurement and light inte
 Upon program execution, the Ultrasonic Sensor will:
   - Take reading from environment, maximum of 4m, minimum on 0.02m.
   - Output reading to command line, if limit is exceeded, "invalid distance".
+  - Reading is taken by LED, dimming in brightness the lower the reading.
+  - Reading is taken by Motor, arm angles from 0°-180°, 0° = 0.02m up to 180° = 4m
+
+User has the option to toggle input environemnt to Photoresistor on AD/DA module.
+
+Upon User typing 't' and pressing 'enter' input switches to Photoresistor that will:
+  - Take reading from environemnt, maximum of 3.3V, minimum of 0V (255-0 digitally).
+  - Output reading to command line.
+  - Reading is taken by LED, dimming in brightness.
+  - Reading is taken by Motor, arm angles from 0°-180°, 0° = 3.3V up to 180° = 0V.
+
+User may toggle back to Distance Sensor with 't' -> 'enter' input combination.
+
+User may interrupt and press 'enter' to exit program.
+
+Upon exiting program:
+  - Servo Motor returns to neutral position, ~90°.
+  - Led stops PWM and maintains default brightness.
 
 # Execution/Functionality
 Download integration.py to your device. Ensure the file is placed on your Raspberry Pi, whether through mounting, online copying, or any method.
