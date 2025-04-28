@@ -10,10 +10,8 @@ Users can toggle between two inputs sources: distance measurement and light inte
 ![Filip S  Integration Block Diagram](https://github.com/user-attachments/assets/dd61ddfa-1871-4944-a325-ae0a7f650aea)
 
 Upon program execution, the Ultrasonic Sensor will:
-
-    - Take reading from environment, maximum of 4m, minimum on 0.02m.
-    
-    - Output reading to command line, if limit is exceeded, "invalid distance".
+  - Take reading from environment, maximum of 4m, minimum on 0.02m.
+  - Output reading to command line, if limit is exceeded, "invalid distance".
 
 # Execution/Functionality
 Download integration.py to your device. Ensure the file is placed on your Raspberry Pi, whether through mounting, online copying, or any method.
