@@ -7,6 +7,8 @@ Users can toggle between two inputs sources: distance measurement and light inte
 
 ![image](https://github.com/user-attachments/assets/939225b7-0453-4e5d-91a2-0e9e0971d3a1)
 
+![Filip S  Integration Block Diagram](https://github.com/user-attachments/assets/dd61ddfa-1871-4944-a325-ae0a7f650aea)
+
 # Execution/Functionality
 
 
