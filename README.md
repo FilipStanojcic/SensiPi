@@ -5,6 +5,9 @@ By leveraging an ultrasonic distance sensor, photoresistor-based AD/DA conversio
 
 Users can toggle between two inputs sources: distance measurement and light intensity. Changes are reflected in hardware behaviour.
 
+![image](https://github.com/user-attachments/assets/939225b7-0453-4e5d-91a2-0e9e0971d3a1)
+
+
 # Execution
 
 # Difficulties
