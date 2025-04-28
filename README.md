@@ -61,4 +61,4 @@ LED is set to 1000Hz frequency with PWM.
 These devices can be wired in many ways, so if need be, edit integration.py however necessary to match wiring to the defined GPIO pins, no other changes should be needed.
 
 # Difficulties
-
+Programming interrupts and threading proved tricky, mainly how to allow the user to switch environments. Allowing a toggle solved this issue, althought when exiting the program the interrupt does not act exactly how it should. I would hope to fix this in the future.
