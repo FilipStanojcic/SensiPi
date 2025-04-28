@@ -10,7 +10,9 @@ Users can toggle between two inputs sources: distance measurement and light inte
 ![Filip S  Integration Block Diagram](https://github.com/user-attachments/assets/dd61ddfa-1871-4944-a325-ae0a7f650aea)
 
 Upon program execution, the Ultrasonic Sensor will:
+
     - Take reading from environment, maximum of 4m, minimum on 0.02m.
+    
     - Output reading to command line, if limit is exceeded, "invalid distance".
 
 # Execution/Functionality
@@ -23,14 +25,21 @@ Run the program using "python integration.py".
 Your device should be communicating with a Raspberry Pi over a TTL-serial cable. For the sake of this project, wire an LED, an Ultrasonic Ranging Module (HC - SR04), a 9g Micro Servo Motor (MG90), and an 8-bit A/D and D/A converter (PCF8591).
 
 LED is connected with 220-ohm resistor, 3.3V and GROUND, and wire to GPIO 13.
+
 Ultrasonic Distance Sensor TRIGGER and ECHO are wired to GPIO 18 and 17 respectively, with 3.3V and GROUND.
+
 AD/DA Converter Module is connected with 3.3V and GROUND, with SCL and SDA wired to respective pins on the Raspberry Pi Breakout Cobbler.
+
 Servo Motor is connected with 5V and GROUND, and wire to GPIO 12.
+
 Cobbler is wired to laptop for operator input and output.
 
 GPIO pins are set to Broadcom, pin numbers are identified, I/O is set.
+
 Converter Module A0 is set to 0x40 for photoresistor mounted on device to be used.
+
 Servo Motor is set to 50Hz frequency (period of 20 ms) with PWM.
+
 LED is set to 1000Hz frequency with PWM.
 
 These devices can be wired in many ways, so if need be, edit integration.py however necessary to match wiring to the defined GPIO pins, no other changes should be needed.
